@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<batchIntegrationRequest xmlns="http://batchIntegrationRequest.bis.jbi.marketlive.com">
+  <!-- USE FILE NAME FRIENDLY NAMES : no spaces or special characters 	-->
+  <requestId>OrderReport</requestId>
+  <comment>Generate Order report</comment>
+  <merchant>
+    <code>bobeau</code>
+    <site>
+      <code>bobeau</code>
+      <environment>revv161</environment>
+      <integrationWebService>
+	    <url>http://localhost:8802/IntegrationWS/IntegrationWSService</url>
+        <commandFiles>			
+          <file>
+            <name>revv161-orderReport-command.xml</name>
+            <seqNum>1</seqNum>
+            <encryptionRequested>false</encryptionRequested>
+			<inputXSLTFileName></inputXSLTFileName>
+            <outputXSLTFileName></outputXSLTFileName>
+		   <outputFileCopies>
+    			<fileCopy>
+    			 	<fileName>OrderReport.xls</fileName>
+					 <directoryName></directoryName>
+    				 <xsltFileName>OrderReport.xslt</xsltFileName>
+    				 <xsltOutputFileExtension>xls</xsltOutputFileExtension>
+					 <fileCopyEncryption>
+						<publicKeyFile></publicKeyFile>
+						<outputFileExtension></outputFileExtension>
+						<asciiFormatEncoding>true</asciiFormatEncoding>
+					</fileCopyEncryption>
+					<encryptionRequested>false</encryptionRequested>
+					<overwriteExisting>true</overwriteExisting>
+				</fileCopy>
+  		</outputFileCopies>
+          </file>
+        </commandFiles>
+      </integrationWebService>
+      <fileEncryption>
+       <!-- Leave this entry even when the process is not to use encryption, BIS needs to have a valid pgp key that exist in the file system-->
+		<publicKeyFile>test-pubring.pgp</publicKeyFile>
+		<outputFileExtension>pgp</outputFileExtension>
+		<asciiFormatEncoding>true</asciiFormatEncoding>
+      </fileEncryption>
+      <emailNotification>
+        <enabled>true</enabled>
+        <to>valid@kibocommerce.com</to>
+        <cc></cc>
+        <bcc></bcc>
+      </emailNotification>
+    </site>
+  </merchant>
+</batchIntegrationRequest>
