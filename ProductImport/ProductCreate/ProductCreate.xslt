@@ -5,13 +5,16 @@
                 xmlns:y="urn:schemas-microsoft-com:office:spreadsheet" xmlns:o="urn:schemas-microsoft-com:office:office"
                 xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
                 xmlns:ml="http://marketlive.com/integration/xmlbean"
+                xmlns:date="http://exslt.org/dates-and-times"
+                extension-element-prefixes="date"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="y o x ss ml xs t">
 
     <xsl:output method="xml" encoding="UTF-8" indent="no"
                 cdata-section-elements="ml:urlValue ml:title ml:metaDescription ml:metaKeywords"/>
-    <xsl:strip-space elements="*"/>
-    <xsl:template match="text()"/>
 
+    <xsl:strip-space elements="*"/>
+
+    <xsl:template match="text()"/>
     <!-- TEMPLATE MAIN -->
     <xsl:template match="y:Table">
         <ml:marketlive>
@@ -120,6 +123,8 @@
                                             <ml:taxable>true</ml:taxable>
                                             <ml:shippingChargeable>true</ml:shippingChargeable>
                                             <ml:deleted>false</ml:deleted>
+                                            <ml:dateActivate><xsl:value-of select="date:date-time()"/></ml:dateActivate>
+                                            <ml:dateDeactivate>2046-07-29T12:48:31-07:00</ml:dateDeactivate>
                                             <ml:skuOptionLinks>
                                                 <ml:skuOptionLink>
                                                     <xsl:if test="$color !=''">
