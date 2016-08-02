@@ -97,6 +97,7 @@
                                     <ml:productInfoPages>
                                         <ml:productInfoPage locale="en_US">
                                             <ml:topics>
+											<xsl:if test="$topic1 !='' ">
                                                 <ml:topic>
                                                     <ml:code>TOPIC_1</ml:code>
                                                     <ml:contentText>
@@ -104,6 +105,8 @@
                                                     </ml:contentText>
                                                     <ml:contentType>2</ml:contentType>
                                                 </ml:topic>
+												</xsl:if>
+												<xsl:if test="$topic2 !='' ">
                                                 <ml:topic>
                                                     <ml:code>TOPIC_2</ml:code>
                                                     <ml:contentFile>
@@ -111,6 +114,8 @@
                                                     </ml:contentFile>
                                                     <ml:contentType>1</ml:contentType>
                                                 </ml:topic>
+												</xsl:if>
+												<xsl:if test="$topic2Text !='' ">
                                                 <ml:topic>
                                                     <ml:code>TOPIC_2</ml:code>
                                                     <ml:contentText>
@@ -118,6 +123,8 @@
                                                     </ml:contentText>
                                                     <ml:contentType>2</ml:contentType>
                                                 </ml:topic>
+												</xsl:if>
+												<xsl:if test="$topic4 !='' ">
                                                 <ml:topic>
                                                     <ml:code>TOPIC_4</ml:code>
                                                     <ml:contentText>
@@ -125,6 +132,7 @@
                                                     </ml:contentText>
                                                     <ml:contentType>2</ml:contentType>
                                                 </ml:topic>
+												</xsl:if>
                                             </ml:topics>
                                         </ml:productInfoPage>
                                     </ml:productInfoPages>

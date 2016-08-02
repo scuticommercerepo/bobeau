@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<batchIntegrationRequest xmlns="http://batchIntegrationRequest.bis.jbi.marketlive.com">
+  <!-- USE FILE NAME FRIENDLY NAMES : no spaces or special characters 	-->
+  <requestId>ProductSecondaryImport</requestId>
+  <comment>ProductSecondaryImport</comment>
+  <merchant>
+    <code>bobeau</code>
+    <site>
+      <code>bobeau</code>
+      <environment>stgv161</environment>
+      <integrationWebService>
+	    <url>http://localhost:8802/IntegrationWS/IntegrationWSService</url>
+        <commandFiles>			
+          <file>
+            <name>ProductSecondaryImport.xml</name>
+            <seqNum>1</seqNum>
+            <encryptionRequested>false</encryptionRequested>
+			<inputXSLTFileName>ProductSecondaryImport.xslt</inputXSLTFileName>
+            <outputXSLTFileName></outputXSLTFileName>
+         </file>
+        </commandFiles>
+      </integrationWebService>
+      <fileEncryption>
+       <!-- Leave this entry even when the process is not to use encryption, BIS needs to have a valid pgp key that exist in the file system-->
+		<publicKeyFile>test-pubring.pgp</publicKeyFile>
+		<outputFileExtension>pgp</outputFileExtension>
+		<asciiFormatEncoding>true</asciiFormatEncoding>
+      </fileEncryption>
+      <emailNotification>
+        <enabled>true</enabled>
+        <to>valid@kibocommerce.com</to>
+        <cc></cc>
+        <bcc></bcc>
+      </emailNotification>
+    </site>
+  </merchant>
+</batchIntegrationRequest>

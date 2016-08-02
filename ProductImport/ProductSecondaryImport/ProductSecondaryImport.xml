@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Crew107</Author>
+  <LastAuthor>rajesh</LastAuthor>
+  <Created>2016-05-09T20:45:54Z</Created>
+  <LastSaved>2016-07-29T22:12:17Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <CustomDocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <WorkbookGuid dt:dt="string">2fb3a4bb-afb6-4ab6-bfb4-5593d6b990ea</WorkbookGuid>
+ </CustomDocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>12015</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <MaxChange>0.0001</MaxChange>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s58">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s59">
+   <Alignment ss:Vertical="Bottom"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s66">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="14" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s67">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s68">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#1E1E1E"/>
+  </Style>
+  <Style ss:ID="s74">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="productimport_example ">
+  <Table ss:ExpandedColumnCount="14" ss:ExpandedRowCount="2" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s58">
+   <Column ss:StyleID="s58" ss:AutoFitWidth="0" ss:Width="135"/>
+   <Column ss:StyleID="s58" ss:Width="186"/>
+   <Column ss:StyleID="s58" ss:AutoFitWidth="0" ss:Width="1017.75"/>
+   <Column ss:StyleID="s58" ss:AutoFitWidth="0" ss:Width="1342.5"/>
+   <Column ss:StyleID="s59" ss:Width="255.75"/>
+   <Column ss:StyleID="s58" ss:AutoFitWidth="0" ss:Width="1021.5"/>
+   <Column ss:StyleID="s58" ss:Width="90.75"/>
+   <Column ss:StyleID="s58" ss:Width="118.5"/>
+   <Column ss:StyleID="s58" ss:Width="153.75"/>
+   <Column ss:StyleID="s58" ss:Width="158.25"/>
+   <Column ss:Index="13" ss:StyleID="s58" ss:Width="57"/>
+   <Row ss:Height="18.75" ss:StyleID="s66">
+    <Cell><Data ss:Type="String">Style Number</Data></Cell>
+    <Cell><Data ss:Type="String">item_name</Data></Cell>
+    <Cell><Data ss:Type="String">long description</Data></Cell>
+    <Cell><Data ss:Type="String">Product info Tab 1</Data></Cell>
+    <Cell><Data ss:Type="String">Product info Tab 2 &quot;file&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">Product info Tab 2 &quot;Text&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">Topic3</Data></Cell>
+   </Row>
+   <Row ss:Height="409.5">
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Test22332355S</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Larken Ribbed Knit Cardi</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">This ribbed knit cardigan has an open front for the perfect drape. Beautifully textured with double pockets and an elongated hem and subtle side slits add movement. You'll want to layer this over everything.</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">&lt;ul style=&quot;list-style:disc inside none;&quot;&gt;&lt;li&gt;Wrap-Style&lt;/li&gt;&lt;li&gt;Button Closure&lt;/li&gt;&lt;li&gt;Flattering  Silhouette&lt;/li&gt;&lt;li&gt;76% Rayon,19% Poly, 5% Spandex&lt;/li&gt;&lt;li&gt;Height: 5'9, Bust: 33A, Waist:23, Hips: 34 &lt;/li&gt;&lt;li&gt;Hand Wash Cold&lt;/li&gt;&lt;li&gt;Made In USA&lt;/li&gt;&lt;/ul&gt;</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">/bobeau/detailpage/Bobeau-SizeChart.jpg</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; width=&quot;100%&quot; class=&quot;data-table data-center&quot;&gt;&#10; &lt;thead&gt;&#10; &lt;tr&gt;&#10;  &lt;th&gt;Alphabetical Size&lt;/th&gt;&#10;  &lt;th&gt;Numeric Size&lt;/th&gt;&#10;  &lt;th&gt;Bust&lt;/th&gt;&#10;  &lt;th&gt;Waist&lt;/th&gt;&#10;  &lt;th&gt;Hips&lt;/th&gt;&#10; &lt;/tr&gt;&#10; &lt;/thead&gt;&#10; &lt;tbody&gt;&#10; &lt;tr&gt;&#10;  &lt;td&gt;XS&lt;/td&gt;&#10;  &lt;td&gt;0-2&lt;/td&gt;&#10;  &lt;td&gt;32.5&quot;- 33.5&quot;&lt;/td&gt;&#10;  &lt;td&gt;25&quot;- 26&quot;&lt;/td&gt;&#10;  &lt;td&gt;35.5&quot;- 36.5&quot;&lt;/td&gt;&#10; &lt;/tr&gt;&#10; &lt;tr&gt;&#10;  &lt;td&gt;S&lt;/td&gt;&#10;  &lt;td&gt;4-6&lt;/td&gt;&#10;  &lt;td&gt;34.5&quot;- 35.5&quot;&lt;/td&gt;&#10;  &lt;td&gt;27&quot;- 28&quot;&lt;/td&gt;&#10;  &lt;td&gt;37.5&quot;- 38.5&quot;&lt;/td&gt;&#10; &lt;/tr&gt;&#10; &lt;tr&gt;&#10;  &lt;td&gt;M&lt;/td&gt;&#10;  &lt;td&gt;8- 10&lt;/td&gt;&#10;  &lt;td&gt;36.5&quot;- 37.5&quot;&lt;/td&gt;&#10;  &lt;td&gt;29&quot;- 30&quot;&lt;/td&gt;&#10;  &lt;td&gt;39.5&quot;- 40.5&quot;&lt;/td&gt;&#10; &lt;/tr&gt;&#10; &lt;tr&gt;&#10;  &lt;td&gt;L&lt;/td&gt;&#10;  &lt;td&gt;12- 14&lt;/td&gt;&#10;  &lt;td&gt;38.5&quot;- 39.5&quot;&lt;/td&gt;&#10;  &lt;td&gt;31&quot;- 32&quot;&lt;/td&gt;&#10;  &lt;td&gt;41.5&quot;- 42.5&quot;&lt;/td&gt;&#10; &lt;/tr&gt;&#10; &lt;tr&gt;&#10;  &lt;td&gt;XL&lt;/td&gt;&#10;  &lt;td&gt;16- 18&lt;/td&gt;&#10;  &lt;td&gt;40.5&quot;- 41.5&quot;&lt;/td&gt;&#10;  &lt;td&gt;33&quot;- 34&quot;&lt;/td&gt;&#10;  &lt;td&gt;43.5&quot;- 44.5&quot;&lt;/td&gt;&#10; &lt;/tr&gt;&#10; &lt;/tbody&gt;&#10;&lt;/table&gt;</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">&lt;strong&gt;Free shipping on orders over $75.&lt;/strong&gt;&lt;br&gt;We want you to love your Bobeau products. If you are not completely satisfied with your Bobeau.com purchase, just return it to us within 30 days for a full refund. For more info, please see our customer service &lt;a href=&quot;/category/customer+service/faq.do&quot;&gt;FAQs.&lt;/a&gt;</Data></Cell>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Zoom>90</Zoom>
+   <Selected/>
+   <TopRowVisible>2</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>2</ActiveRow>
+     <RangeSelection>R3:R95</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

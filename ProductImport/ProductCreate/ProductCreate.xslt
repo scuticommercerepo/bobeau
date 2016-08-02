@@ -19,7 +19,7 @@
     <xsl:template match="y:Table">
         <ml:marketlive>
             <ml:import>
-                <ml:command type="createOrUpdate">
+                <ml:command type="create">
                     <ml:products>
                         <xsl:for-each select="y:Row">
                             <xsl:if test="position() != 1 ">
@@ -48,21 +48,21 @@
                                 </xsl:variable>
                                 <xsl:variable name="size">
                                     <xsl:for-each select="./y:Cell">
-                                        <xsl:if test="position() = 8 ">
+                                        <xsl:if test="position() = 7 ">
                                             <xsl:value-of select="."/>
                                         </xsl:if>
                                     </xsl:for-each>
                                 </xsl:variable>
                                 <xsl:variable name="skuCode">
                                     <xsl:for-each select="./y:Cell">
-                                        <xsl:if test="position() = 10 ">
+                                        <xsl:if test="position() = 9 ">
                                             <xsl:value-of select="."/>
                                         </xsl:if>
                                     </xsl:for-each>
                                 </xsl:variable>
                                 <xsl:variable name="price">
                                     <xsl:for-each select="./y:Cell">
-                                        <xsl:if test="position() = 11 ">
+                                        <xsl:if test="position() = 10 ">
                                             <xsl:value-of select="."/>
                                         </xsl:if>
                                     </xsl:for-each>
