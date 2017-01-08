@@ -22,54 +22,6 @@
 	width: 17.5%  !important;
 }
 </style>
-<script type="text/javascript">
-	jQuery(function($){
-
-	$('.lod-mr').append( '<span class="load-more"></span>' );
-	var button = $('.lod-mr .load-more');
-	var page = 2;
-	var loading = false;
-	var scrollHandling = {
-	    allow: true,
-	    reallow: function() {
-	        scrollHandling.allow = true;
-	    },
-	    delay: 400 //(milliseconds) adjust to the highest acceptable value
-	};
-
-	$(window).scroll(function(){
-	  
-		if( ! loading && scrollHandling.allow ) {
-			scrollHandling.allow = false;
-			setTimeout(scrollHandling.reallow, scrollHandling.delay);
-			var offset = $(button).offset().top - $(window).scrollTop();
-			if( 2000 > offset ) {
-                 console.log('hi');
-				loading = true;
-				var data = {
-					action: 'be_ajax_load_more',
-					page: page,
-					query: beloadmore.query,
-				};
-				
-				$.post(beloadmore.url, data, function(res) {
-					if( res.success) {
-						$('.lod-mr').append( res.data );
-						$('.lod-mr').append( button );
-						page = page + 1;
-						loading = false;
-					} else {
-						// console.log(res);
-					}
-				}).fail(function(xhr, textStatus, e) {
-					// console.log(xhr.responseText);
-				});
-
-			}
-		}
-	});
-});
-</script>
 </head>
 
 <body <?php body_class(); ?>>

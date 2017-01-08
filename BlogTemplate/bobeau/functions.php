@@ -180,6 +180,7 @@ function m1_customize_register( $wp_customize ) {
 	$args['post_type'] = isset( $args['post_type'] ) ? esc_attr( $args['post_type'] ) : 'post';
 	$args['paged'] = esc_attr( $_POST['page'] );
 	$args['post_status'] = 'publish';  
+
 	ob_start();?>
 	<?php $loop = new WP_Query( $args );
 	if( $loop->have_posts() ): while( $loop->have_posts() ): $loop->the_post(); ?>
@@ -202,6 +203,7 @@ function m1_customize_register( $wp_customize ) {
 	endwhile; endif; wp_reset_postdata();
 	$data = ob_get_clean();
 	wp_send_json_success( $data );
+	print_r($data);
 	wp_die();
 }
 add_action( 'wp_ajax_be_ajax_load_more', 'be_ajax_load_more' );
@@ -216,7 +218,7 @@ function be_load_more_js() {
 		'query' => $wp_query->query,
 	);
 			
-	wp_enqueue_script( 'be-load-more', get_stylesheet_directory_uri() . '/js/load-more.js', array( 'jquery' ), '1.6', true );
+	wp_enqueue_script( 'be-load-more', get_stylesheet_directory_uri() . '/js/load-more.js', array( 'jquery' ), '1.7', true );
 	wp_localize_script( 'be-load-more', 'beloadmore', $args );
 	
 }

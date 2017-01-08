@@ -988,6 +988,21 @@ footer{
 	left: 100%;
     margin-left: 15px;
 }
+.glry-title{
+	text-align: center;
+	position: relative;
+	margin-bottom: 4%;
+}
+.glry-title:before{
+	content: "";
+    position: absolute;
+    height: 0;
+    border-bottom: 2px solid #ff4d40;
+    width: 4%;
+    bottom: -8px;
+    margin-left: 2%;
+    padding-bottom: 5px;
+}
 h5.inst-sub-hd{
 	margin-top: 5px;
 	margin-bottom: 25px;

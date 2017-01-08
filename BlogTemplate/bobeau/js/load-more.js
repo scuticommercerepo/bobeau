@@ -1,4 +1,3 @@
-/*
 jQuery(function($){
 
 	$('.lod-mr').append( '<span class="load-more"></span>' );
@@ -14,16 +13,15 @@ jQuery(function($){
 	};
 
 	$(window).scroll(function(){
-	  
 		if( ! loading && scrollHandling.allow ) {
 			scrollHandling.allow = false;
 			setTimeout(scrollHandling.reallow, scrollHandling.delay);
 			var offset = $(button).offset().top - $(window).scrollTop();
 			if( 2000 > offset ) {
-                 console.log('hi');
 				loading = true;
 				var data = {
 					action: 'be_ajax_load_more',
+					nonce: beloadmore.nonce,
 					page: page,
 					query: beloadmore.query,
 				};
@@ -44,5 +42,3 @@ jQuery(function($){
 		}
 	});
 });
-
-*/
